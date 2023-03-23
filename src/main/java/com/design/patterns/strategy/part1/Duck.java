@@ -6,8 +6,8 @@ public class Duck {
         System.out.println("SWIM");
     }
 
-    public void display() {
-        System.out.println("ITS ME, the duck");
+    public String display() {
+       return "ITS ME, the duck";
     }
 
     public void quack() {
