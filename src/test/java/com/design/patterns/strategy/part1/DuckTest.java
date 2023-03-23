@@ -20,4 +20,13 @@ class DuckTest {
 
         assertThat(mallardDuck.display()).isEqualTo("I AM A REDHEAD DUCK");
     }
+
+
+    // SHOULD NOT BE ALLOWED
+    @Test
+    void isMakingRubberDuckFly() {
+        Duck mallardDuck = new RubberDuck();
+
+        assertThat(mallardDuck.fly()).isEqualTo("I CAN FLYYYY");
+    }
 }
