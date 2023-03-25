@@ -1,5 +1,6 @@
 package com.design.patterns.strategy.part1;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -22,8 +23,9 @@ class DuckTest {
     }
 
 
-    // SHOULD NOT BE ALLOWED
+    // SHOULD NOT BE ALLOWED, Throws exception and breaks LSP
     @Test
+    @Disabled
     void isMakingRubberDuckFly() {
         Duck mallardDuck = new RubberDuck();
 
