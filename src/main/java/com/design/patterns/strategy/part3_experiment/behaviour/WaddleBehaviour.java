@@ -1,5 +1,7 @@
 package com.design.patterns.strategy.part3_experiment.behaviour;
 
-public interface WaddleBehaviour {
+import com.design.patterns.strategy.part3.behaviour.Behaviour;
+
+public interface WaddleBehaviour extends Behaviour {
     String waddle();
 }
