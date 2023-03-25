@@ -10,14 +10,16 @@ class DuckTest {
 
     @Test
     void shouldDisplayMallardDuck() {
-        Duck mallardDuck = new MallardDuck(); // does not break LSP yet
+        // changes in tests MallardDuck CHANGE-4
+        Duck mallardDuck = new MallardDuck(2); // does not break LSP yet
 
         assertThat(mallardDuck.display()).isEqualTo("I AM A MALLARD DUCK");
     }
 
     @Test
     void shouldDisplayRedHeadDuck() {
-        Duck mallardDuck = new RedheadDuck();
+        // changes in tests RedHeadDuck CHANGE-5
+        Duck mallardDuck = new RedheadDuck(2);
 
         assertThat(mallardDuck.display()).isEqualTo("I AM A REDHEAD DUCK");
     }
@@ -27,7 +29,8 @@ class DuckTest {
     @Test
     @Disabled
     void isMakingRubberDuckFly() {
-        Duck mallardDuck = new RubberDuck();
+        // changes in tests for RubberDuck CHANGE-6
+        Duck mallardDuck = new RubberDuck(2);
 
         assertThat(mallardDuck.fly()).isEqualTo("I CAN FLYYYY");
     }

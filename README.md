@@ -32,5 +32,6 @@ class Example{
 ```
 - It's hard to gain knowledge of all duck behaviours. (You never know what the future holds. We may have to keep changing the contract for `Duck` superclass)
 - Changes can unintentionally affect other ducks. (Any change in Duck class may affect other ducks which may not even require the behaviour. Eg how `RubberDuck` got affected)
+  - Any change in the parent class (Eg: a new data member will have be impacting the subclasses) Let's say if duck has toes, and it wants to initialize the toes it has, it will impact everyone. Search `CHANGE-` (total 6 changes because of 3 subclasses)
 ----
 Inheritance helps in reusability, but it is difficult to maintain.
