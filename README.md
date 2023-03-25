@@ -51,3 +51,17 @@ Inheritance helps in reusability, but it is difficult to maintain.
 IDENTIFY THE APPLICATION THAT VARY AND SEPARATE THEM FROM WHAT STAYS THE SAME
 
 ---
+
+### Using Behaviour classes
+- Introducing `FlyBehaviour` and `QuackBehaviour` which are pluggable to the required Duck whenever required.
+- PROGRAMMING TO AN INTERFACE NOT AN IMPLEMENTATION. From what I understood means you don't want the behaviour which is sooo varying to be tightly coupled to a class.
+  - Like in previous example we had concrete implementation of fly and quack in the `Duck` superclass.
+  - It's kind of like a feature you can just plug in. A usb you can plug which has all the logic abstracted from the class which is using it.
+    - When you have the concrete implementation, you make break the principle of `Open for extension and closed for modification`.
+- Hence we made
+  - FlyBehaviour <- FlyWithWings
+  - QuackBehaviour <- Squeak
+- And have our Duck plug it in with Composition (instead of implementing it or inheriting it)
+- Also the advantage of having flyBehaviour sub classes is that IF flyWithWings requires some calculation and so (has data members it is only restricted in that class and does not affect other classes)
+
+- If there is any other behaviour which comes up, so the class which will be affected will be that particular class only. Eg `MallardDuck` also walks, then we can introduce walk behaviour.
