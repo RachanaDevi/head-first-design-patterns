@@ -65,3 +65,16 @@ IDENTIFY THE APPLICATION THAT VARY AND SEPARATE THEM FROM WHAT STAYS THE SAME
 - Also the advantage of having flyBehaviour sub classes is that IF flyWithWings requires some calculation and so (has data members it is only restricted in that class and does not affect other classes)
 
 - If there is any other behaviour which comes up, so the class which will be affected will be that particular class only. Eg `MallardDuck` also walks, then we can introduce walk behaviour.
+
+### The experiment
+- What if we did not use inheritance over composition
+- part3_experiment implements the methods rather than the Duck having composition over those behaviours
+
+In part3_experiment and COUNTER points are what are in the normal part3 implementation (i.e behaviour classes and composition)
+- Duck class is a normal abstract class
+- We have interfaces which get implemented in behaviour classes
+  - The interfaces just provide a contract of what the behaviours of that particular Duck should be
+  - We still have to add the implementation from the concrete classes and call their method
+    - CONSEQUENCE: this may lead to **Repetition** of code and if two classes `MallardDuck` and `RedHeadDuck` have same fly, quack behaviour there are changes of
+      introducing bugs
+    - If more behaviours come up, the change of impact will be implementing all classes to have that interface
