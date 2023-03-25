@@ -8,4 +8,9 @@ public class Quack implements QuackBehaviour {
     public String quack() {
         return "I CAN QUACK";
     }
+
+    @Override
+    public String invoke() {
+        return quack();
+    }
 }

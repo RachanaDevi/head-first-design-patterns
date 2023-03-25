@@ -1,6 +1,5 @@
 package com.design.patterns.strategy.part3.behaviour;
 
-import com.design.patterns.strategy.part3_experiment.behaviour.WaddleBehaviour;
 
 public class NoWaddle implements WaddleBehaviour {
 
@@ -9,5 +8,10 @@ public class NoWaddle implements WaddleBehaviour {
     @Override
     public String waddle() {
         return "NO WADDLING FOR ME";
+    }
+
+    @Override
+    public String invoke() {
+        return waddle();
     }
 }

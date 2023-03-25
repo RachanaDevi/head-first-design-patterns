@@ -8,4 +8,9 @@ public class Waddle implements WaddleBehaviour {
     public String waddle() {
         return "WADDLE";
     }
+
+    @Override
+    public String invoke() {
+        return waddle();
+    }
 }

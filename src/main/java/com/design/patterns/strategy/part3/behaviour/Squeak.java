@@ -8,4 +8,9 @@ public class Squeak implements QuackBehaviour {
     public String quack() {
         return "I CAN SQUEAK";
     }
+
+    @Override
+    public String invoke() {
+        return quack();
+    }
 }

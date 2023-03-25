@@ -78,3 +78,6 @@ In part3_experiment and COUNTER points are what are in the normal part3 implemen
     - CONSEQUENCE: this may lead to **Repetition** of code and if two classes `MallardDuck` and `RedHeadDuck` have same fly, quack behaviour there are changes of
       introducing bugs
     - If more behaviours come up, the change of impact will be implementing all classes to have that interface
+      - COUNTER: We will have to still add the instance of the new behaviour in the constructor in part_3 (so that is one major change) (eg: WaddleBehaviour) (only one change)
+  - COUNTER: But if we add more behaviours (Like we added `WaddleBehaviour`) then `Duck` will get affected, which means subclasses will get affected.
+    - Then again we have the problem of inheritance and we have to separate out the things which are varying (i.e create an abstraction over it)
