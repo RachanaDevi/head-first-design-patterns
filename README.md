@@ -35,3 +35,19 @@ class Example{
   - Any change in the parent class (Eg: a new data member will have be impacting the subclasses) Let's say if duck has toes, and it wants to initialize the toes it has, it will impact everyone. Search `CHANGE-` (total 6 changes because of 3 subclasses)
 ----
 Inheritance helps in reusability, but it is difficult to maintain.
+
+
+### Using interfaces
+- Let's have quack `Flyable` and `Quackable` as an interface, so the ducks who need the required behaviour may provide the implementation.
+
+### Conclusion
+- You don't have intertwining of methods problem like we had in `Inheritance` but what about reusability? We still have code duplication  everywhere then.
+- We have identified that Flying and Quack behaviour as a concept is something which can change or vary. So let's separate these out.
+
+- PROBLEM:  BUT We are **not** reusing the code in subclass `MallardDuck` and `RedheadDuck` if any change for fly has to be changed, if the both represent the same `fly` or `quack` it has to be changed in
+  both the subclasses.
+
+
+IDENTIFY THE APPLICATION THAT VARY AND SEPARATE THEM FROM WHAT STAYS THE SAME
+
+---
