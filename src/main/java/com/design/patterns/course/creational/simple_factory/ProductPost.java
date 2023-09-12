@@ -1,4 +1,4 @@
-package com.design.patterns.creational.simple_factory;
+package com.design.patterns.course.creational.simple_factory;
 
 public class ProductPost extends Post {
 
