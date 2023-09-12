@@ -5,9 +5,12 @@ public class FlyWithWings implements FlyBehaviour {
     public static final FlyWithWings INSTANCE = new FlyWithWings();
 
     // this has to be removed
+
+    // strategy+state+composition
+    // maintaining strategy and state
     @Override
     public String fly() {
-        return "I CAN FLY";
+        return "I CAN FLY"; //state
     }
 
     @Override

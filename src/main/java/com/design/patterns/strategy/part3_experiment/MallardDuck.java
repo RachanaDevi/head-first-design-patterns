@@ -25,6 +25,10 @@ import com.design.patterns.strategy.part3_experiment.behaviour.*;
 // CHANGE-1 IMPLEMENT BEHAVIOUR
 
 // PROBLEM: If you have more behaviours you will keep on adding implements to it again and again?
+
+ // interface explosion - having too many interfaces implementation
+// premature refactoring/ extraction of common behaviours
+// the patterns
 public class MallardDuck extends Duck implements FlyBehaviour, QuackBehaviour, WaddleBehaviour {
 
     @Override

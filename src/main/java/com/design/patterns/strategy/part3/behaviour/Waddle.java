@@ -6,7 +6,7 @@ public class Waddle implements WaddleBehaviour {
 
     @Override
     public String waddle() {
-        return "WADDLE";
+        return "WADDLE >>>> ";
     }
 
     @Override
