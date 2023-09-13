@@ -1,9 +1,9 @@
 package com.design.patterns.course.creational.abstract_factory.factory;
 
-import com.design.patterns.course.creational.abstract_factory.EC2Instance;
-import com.design.patterns.course.creational.abstract_factory.Instance;
-import com.design.patterns.course.creational.abstract_factory.S3Storage;
-import com.design.patterns.course.creational.abstract_factory.Storage;
+import com.design.patterns.course.creational.abstract_factory.storage.EC2Instance;
+import com.design.patterns.course.creational.abstract_factory.storage.Instance;
+import com.design.patterns.course.creational.abstract_factory.storage.S3Storage;
+import com.design.patterns.course.creational.abstract_factory.storage.Storage;
 
 public class AwsResourceFactory implements ResourceFactory {
 

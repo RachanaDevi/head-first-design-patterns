@@ -1,7 +1,7 @@
 package com.design.patterns.course.creational.abstract_factory.factory;
 
-import com.design.patterns.course.creational.abstract_factory.Instance;
-import com.design.patterns.course.creational.abstract_factory.Storage;
+import com.design.patterns.course.creational.abstract_factory.storage.Instance;
+import com.design.patterns.course.creational.abstract_factory.storage.Storage;
 
 public interface ResourceFactory {
 

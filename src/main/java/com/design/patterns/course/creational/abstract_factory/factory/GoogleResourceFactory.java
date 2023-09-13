@@ -1,9 +1,9 @@
 package com.design.patterns.course.creational.abstract_factory.factory;
 
-import com.design.patterns.course.creational.abstract_factory.GoogleCloudStorage;
-import com.design.patterns.course.creational.abstract_factory.GoogleComputeEngineInstance;
-import com.design.patterns.course.creational.abstract_factory.Instance;
-import com.design.patterns.course.creational.abstract_factory.Storage;
+import com.design.patterns.course.creational.abstract_factory.storage.GoogleCloudStorage;
+import com.design.patterns.course.creational.abstract_factory.storage.GoogleComputeEngineInstance;
+import com.design.patterns.course.creational.abstract_factory.storage.Instance;
+import com.design.patterns.course.creational.abstract_factory.storage.Storage;
 
 public class GoogleResourceFactory implements  ResourceFactory{
     @Override

@@ -1,4 +1,4 @@
-package com.design.patterns.course.creational.abstract_factory;
+package com.design.patterns.course.creational.abstract_factory.storage;
 
 public class S3Storage implements Storage{
 
