@@ -2,6 +2,10 @@ package com.design.patterns.course.creational.abstract_factory;
 
 public class EC2Instance implements Instance{
 
+    public EC2Instance(Capacity capacity) {
+        System.out.println("created ec2 instance with capacity " + capacity);
+    }
+
     @Override
     public void start() {
         System.out.println("created ec2 instance");
